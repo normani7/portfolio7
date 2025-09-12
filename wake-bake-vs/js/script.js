@@ -28,3 +28,40 @@
     }
 
 })()
+
+// ======================================
+
+function openModal() {
+    document.body.classList.add('body--opened-modal')
+}
+
+function closeModal() {
+    document.body.classList.remove('body--opened-modal')
+}
+
+const aboutImgButton = document.querySelector('.about__img-button');
+const modalCancel = document.querySelector('.modal__cancel');
+const modal = document.querySelector('.modal');
+
+if (aboutImgButton) {
+    aboutImgButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal();
+    });
+}
+
+if (modal) {
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+}
+
+
+if (modalCancel) {
+    modalCancel.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeModal();
+    });
+}
