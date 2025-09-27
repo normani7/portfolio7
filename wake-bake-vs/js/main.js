@@ -1,6 +1,6 @@
 (function () {
 
-    // Burger-menu
+    // Бургер
 
     document.addEventListener('click', burgerInit)
 
@@ -20,7 +20,7 @@
 
     }
 
-    // Modal
+    // Модалка
 
     const modal = document.querySelector('.modal')
     const modalButton = document.querySelector('.about__img-button')
@@ -44,7 +44,7 @@
 
     }
 
-    // Tabs
+    // Табы
 
     const tabControls = document.querySelector('.tab-conrols')
 
@@ -75,7 +75,7 @@
 
     }
 
-    // Accordion
+    // Аккордеон
 
     const accordionLists = document.querySelectorAll('.accordion-list');
 
@@ -108,8 +108,9 @@
 
     });
 
-    // Slider-gallery
-    const swiper = new Swiper('.gallery__slider', {
+    // Слайдер-галерея
+
+    new Swiper('.gallery__slider', {
 
         spaceBetween: 15,
         slidesPerView: 1.5,
@@ -133,6 +134,34 @@
             },
             1101: {
                 slidesPerView: 4,
+            }
+        }
+    });
+
+    // Слайдер-отзывы
+
+    new Swiper('.testimonials__slider', {
+
+        spaceBetween: 0,
+        slidesPerView: 1,
+        centeredSlides: true,
+
+        navigation: {
+            nextEl: '.testimonials__next',
+            prevEl: '.testimonials__prev',
+        },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        },
+
+        breakpoints: {
+            901: {
+                slidesPerView: 1.5,
+            },
+            1201: {
+                slidesPerView: 2.1,
             }
         }
     });
