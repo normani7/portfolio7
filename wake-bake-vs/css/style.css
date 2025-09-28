@@ -501,7 +501,9 @@
 
 /* ================================================ */
 
-.testimonials {}
+.testimonials {
+    margin-bottom: 140px;
+}
 
 .testimonials__inner {
     display: flex;
