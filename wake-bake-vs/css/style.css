@@ -502,7 +502,6 @@
 /* ================================================ */
 
 .testimonials {
-    margin-bottom: 140px;
 }
 
 .testimonials__inner {
@@ -671,6 +670,7 @@
 
 .contact {
     padding: 140px 0;
+    margin-top: 140px;
     background: url("../img/decor/bg-contact.png") 50% 0% / cover no-repeat;
 }
 .contact__inner {
@@ -1148,6 +1148,7 @@
 
     .contact {
         padding-bottom: 80px;
+        margin-top: 0;
     }
 
     .contact__title,
