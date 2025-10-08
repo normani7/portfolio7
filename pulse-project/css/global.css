@@ -1,0 +1,45 @@
+:root {
+    --body-bg: #141414;
+    --body-color: #fff;
+    --accent-color: #F47521;
+}
+
+body {
+    background: var(--body-bg);
+    font-family: 'Archivo Condensed', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--body-color);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main>* {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.container {
+    max-width: 1708px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.title {
+    color: #A6A6A6;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.body--opened-menu .border,
+.body--opened-menu .copyright {
+    height: 0;
+}

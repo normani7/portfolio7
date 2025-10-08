@@ -1,0 +1,153 @@
+.footer {
+    padding: 0 50px 50px 50px;
+    background: var(--body-bg);
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__path {
+    font-family: 'Oswald';
+    font-size: 50px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.footer__action {}
+
+.footer__path {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer__path::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: -36px;
+    z-index: -1;
+    width: 75px;
+    height: 75px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.footer__path:hover::before {
+    opacity: 1;
+}
+
+.footer__border {
+    margin-top: 63px;
+}
+
+.footer {}
+
+.footer__info {
+    padding: 100px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__contact {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footer__contact-title {
+    margin-bottom: 4px;
+}
+
+.footer__contact-mail {
+    font-size: 42px;
+}
+
+.footer__contact-tel {
+    font-size: 42px;
+}
+
+.footer__socials {
+    margin-top: 47px;
+}
+
+.footer__socials-title {
+    color: #A6A6A6;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.footer__socials-list {
+    display: flex;
+    gap: 45px;
+}
+
+.footer__col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+
+.footer__location,
+.footer__schedule {
+    max-width: 250px;
+    width: 100%;
+}
+
+.footer__location-title {
+    margin-bottom: 24px;
+}
+
+.footer__city {}
+
+.footer__city-name {
+    font-family: 'Oswald';
+    font-size: 42px;
+    margin-bottom: 4px;
+}
+
+.footer__city-address {
+    margin-bottom: 24px;
+}
+
+.footer__schedule {}
+
+.footer__schedule-title {
+    margin-bottom: 24px;
+}
+
+.footer__schedule-item {}
+
+.footer__schedule-day {
+    font-family: 'Oswald';
+    font-size: 42px;
+    margin-bottom: 4px;
+}
+
+.footer__schedule-mode {
+    margin-bottom: 24px;
+}
+
+.copyright {
+    background: #303030;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 31px;
+}
+
+.copyright p {
+    padding: 0 108px;
+    margin: 0;
+    width: 100%;
+    opacity: 0.6;
+}
