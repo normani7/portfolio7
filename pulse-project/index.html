@@ -41,7 +41,7 @@
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link">
+                                <a href="#footer__info" class="nav__link">
                                     CONTACT US
                                 </a>
                             </li>
@@ -104,15 +104,17 @@
                 <div class="container">
                     <div class="hero__top">
                         <div class="hero__title">
-                            <p class="hero__main-text">POWER<br>FROM WITHIN</p>
+                            <h1 class="hero__main-text">POWER<br>FROM WITHIN</h1>
                             <span class="hero__stroke">WITHIN</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="hero__bg">
-                    <img src="img/hero-bg.png" alt="">
+                    <img src="img/hero-bg.png" alt="Fitness training background">
                 </div>
-                <a class="hero__arrow" href="#">
+
+                <a class="hero__arrow" href="#footer" aria-label="Scroll to cards">
                     <svg width="45" height="45" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 29H56" stroke="black" stroke-width="2.5" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -121,56 +123,40 @@
                     </svg>
                 </a>
 
-                <div class="hero__card">
-                    <div class="hero__grid">
-                        <div class="hero__card-item">
-                            <p class="hero__card-title">
-                                FITNESS
-                            </p>
-                            <p class="hero__card-text">
-                                IMPROVE YOUR STRENGH
-                            </p>
-                            <div class="hero__card-buttons">
-                                <a href="#" class="hero__card-button">
-                                    GET STARTED
-                                </a>
-                                <a href="#" class="hero__card-arrow">
-                                    <img src="img/card-arrow.svg" alt="card arrow">
+                <div class="hero__cards">
+                    <div class="hero__cards-grid">
+                        <article class="hero__cards-item">
+                            <p class="hero__cards-title">FITNESS</p>
+                            <p class="hero__cards-text">IMPROVE YOUR STRENGTH</p>
+                            <div class="hero__cards-buttons">
+                                <a href="#" class="hero__cards-link">GET STARTED</a>
+                                <a href="#" class="hero__cards-arrow">
+                                    <img src="img/card-arrow.svg" alt="">
                                 </a>
                             </div>
-                        </div>
-                        <div class="hero__card-item">
-                            <p class="hero__card-title">
-                                FITNESS
-                            </p>
-                            <p class="hero__card-text">
-                                IMPROVE YOUR STRENGH
-                            </p>
-                            <div class="hero__card-buttons">
-                                <a href="#" class="hero__card-button">
-                                    GET STARTED
-                                </a>
-                                <a href="#" class="hero__card-arrow">
-                                    <img src="img/card-arrow.svg" alt="card arrow">
+                        </article>
+
+                        <article class="hero__cards-item">
+                            <p class="hero__cards-title">BODYBUILDING</p>
+                            <p class="hero__cards-text">GET BEST BODY SHAPES</p>
+                            <div class="hero__cards-buttons">
+                                <a href="#" class="hero__cards-link">GET STARTED</a>
+                                <a href="#" class="hero__cards-arrow">
+                                    <img src="img/card-arrow.svg" alt="arrow card">
                                 </a>
                             </div>
-                        </div>
-                        <div class="hero__card-item">
-                            <p class="hero__card-title">
-                                FITNESS
-                            </p>
-                            <p class="hero__card-text">
-                                IMPROVE YOUR STRENGH
-                            </p>
-                            <div class="hero__card-buttons">
-                                <a href="#" class="hero__card-button">
-                                    GET STARTED
-                                </a>
-                                <a href="#" class="hero__card-arrow">
-                                    <img src="img/card-arrow.svg" alt="card arrow">
+                        </article>
+
+                        <article class="hero__cards-item">
+                            <p class="hero__cards-title">CROSSFIT</p>
+                            <p class="hero__cards-text">THE BEST DIETARY PLANS</p>
+                            <div class="hero__cards-buttons">
+                                <a href="#" class="hero__cards-link">GET STARTED</a>
+                                <a href="#" class="hero__cards-arrow">
+                                    <img src="img/card-arrow.svg" alt="">
                                 </a>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -181,7 +167,7 @@
 
         </main>
 
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__top">
                     <a href="#" class="footer__logo">
@@ -194,7 +180,7 @@
 
                 <div class="footer__border border"></div>
 
-                <div class="footer__info">
+                <div class="footer__info" id="footer__info">
                     <div class="footer__contact">
                         <p class="footer__contact-title title">CONTACT US</p>
                         <a href="mailto:hello@pulse.com" class="footer__contact-mail">hello@pulse.com</a>

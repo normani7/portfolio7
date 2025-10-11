@@ -4,6 +4,10 @@
     --accent-color: #F47521;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: var(--body-bg);
     font-family: 'Archivo Condensed', 'Arial', sans-serif;
@@ -40,6 +44,11 @@ body {
 }
 
 .body--opened-menu .border,
+.body--opened-menu .hero,
 .body--opened-menu .copyright {
     height: 0;
+}
+
+.body--opened-menu .hero__bg {
+    display: none;
 }

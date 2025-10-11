@@ -23,7 +23,7 @@
 }
 
 .hero__main-text {
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-weight: 600;
     position: relative;
     z-index: 2;
@@ -48,10 +48,16 @@
     margin-top: -40px;
 }
 
+.hero__bg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .hero__arrow {
     position: relative;
     z-index: 2;
-    transform: translateX(725px) translateY(-567px);
+    transform: translateX(725px) translateY(-460px);
     background: var(--accent-color);
     max-width: 100px;
     width: 100%;
@@ -67,58 +73,53 @@
     background: #b85408;
 }
 
-.hero__arrow svg {}
-
-
-.hero__card {
+.hero__cards {
     position: relative;
     margin-top: -100px;
     cursor: pointer;
 }
 
-.hero__grid {
+.hero__cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2px;
     position: relative;
 }
 
-.hero__card-item {
+.hero__cards-item {
     padding: 56px 67px 53px 56px;
     max-width: 639px;
-    height: 396px;
+    min-height: 396px;
+    width: 100%;
     background: #E3E3DE;
     transition: all .5s;
 }
 
-.hero__card-item:hover {
+.hero__cards-item:hover {
     background: var(--accent-color);
 }
 
-
-.hero__card-title {
+.hero__cards-title {
     color: var(--accent-color);
     font-size: 20px;
     letter-spacing: 4px;
     margin-bottom: 4px;
-    transition: all .5s;
+    transition: color .5s;
 }
 
-.hero__card-item:hover {
-    .hero__card-title {
-        color: var(--body-color);
-    }
+.hero__cards-item:hover .hero__cards-title {
+    color: var(--body-color);
 }
 
-.hero__card-text {
+.hero__cards-text {
     color: var(--body-bg);
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-size: 42px;
     font-weight: 600;
     margin-bottom: 176px;
 }
 
-.hero__card-button {
+.hero__cards-link {
     color: var(--body-bg);
     line-height: .23;
     letter-spacing: 1.6px;
@@ -126,10 +127,24 @@
     font-weight: 700;
 }
 
-.hero__card-buttons {
+.hero__cards-buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.hero__cards-arrow img {
+
+}
+
+@media (max-width: 1100px) {
+    .header__logo {
+        max-width: 140px;
+    }
+
+    .nav__link {
+        font-size: 18px;
+    }
 }
 
 .hero__card-arrow {}
