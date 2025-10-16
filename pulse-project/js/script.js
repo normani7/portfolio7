@@ -17,3 +17,15 @@
         }
     }
 })()
+
+// swiper - protein
+ var swiper = new Swiper('.swiper-container-vertical', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 0,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination-vertical',
+                clickable: true,
+            },
+        });
