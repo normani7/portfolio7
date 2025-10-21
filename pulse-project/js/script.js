@@ -19,13 +19,17 @@
 })()
 
 // swiper - protein
- var swiper = new Swiper('.swiper-container-vertical', {
-            direction: 'vertical',
-            slidesPerView: 1,
-            spaceBetween: 0,
-            mousewheel: true,
-            pagination: {
-                el: '.swiper-pagination-vertical',
-                clickable: true,
+const swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        loop: true,
+        speed: 600,
+        spaceBetween: 50,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + '</span>';
             },
-        });
+        },
+    });
