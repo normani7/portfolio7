@@ -57,7 +57,10 @@ body {
 
 .body--opened-menu .border,
 .body--opened-menu .hero,
+.body--opened-menu .hero__cards,
+.body--opened-menu .about,
 .body--opened-menu .copyright {
+    display: none;
     height: 0;
 }
 
