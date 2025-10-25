@@ -24,7 +24,7 @@ const swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         loop: true,
         speed: 600,
-        spaceBetween: 50,
+        spaceBetween: 0,
         pagination: {
             el: '.swiper-pagination-vertical',
             clickable: true,
