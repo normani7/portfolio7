@@ -26,7 +26,7 @@ const swiper = new Swiper('.swiper-container', {
         speed: 600,
         spaceBetween: 50,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.swiper-pagination-vertical',
             clickable: true,
             renderBullet: function (index, className) {
                 return '<span class="' + className + '">' + (index + 1) + '</span>';

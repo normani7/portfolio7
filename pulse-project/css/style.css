@@ -107,6 +107,8 @@
 
 .hero__cards-item:hover {
     background: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(244, 117, 33, 0.2);
 }
 
 .hero__cards-title {
@@ -155,6 +157,7 @@
     padding: 117px 0 0 500px;
     z-index: 1;
     grid-area: content;
+    position: relative;
 }
 
 .protein-container {
@@ -166,16 +169,20 @@
     z-index: 2;
     position: relative;
     overflow: visible;
+    width: 100%;
+
 }
 
 .about__inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 510px 1fr;
     gap: 20px;
+    padding: 25px;
 }
 
 .about__text {
     max-width: 510px;
+    width: 100%;
 }
 
 .about__text-title {
@@ -198,7 +205,6 @@
 }
 
 .about__text-text {
-    max-width: 468px;
     color: #979797;
     line-height: 27px;
 }
@@ -213,10 +219,17 @@
     background: var(--accent-color);
     border-left: 3.5px solid var(--body-color);
     padding: 23px 61px;
-    color: white;
+    color: var(--body-color);
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all .5s;
+}
+
+.about__text-button:hover {
+    background: var(--body-color);
+    color: var(--accent-color);
+    border-left: 3.5px solid var(--accent-color);
 }
 
 .about__text-text:nth-child(5) {
@@ -230,13 +243,18 @@
 
 .about__protein-img {
     position: relative;
-    margin-left: 130px;
+    width: 476px;
+    height: 679px;
+}
+
+.about__protein-img img {
+    width: 100%;
 }
 
 .about__protein-stats {
     position: absolute;
     top: 240px;
-    left: -133px;
+    left: -157px;
 }
 
 .about__protein-stats-white {
@@ -246,7 +264,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 34px 52px;
-    max-width: 142px;
+    max-width: 176px;
 }
 
 .about__protein-stats-orange {
@@ -256,7 +274,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 34px 52px;
-    max-width: 142px;
+    max-width: 176px;
 }
 
 .about__protein-stats-white p:nth-child(1) {
@@ -302,11 +320,13 @@
     width: 100%;
     height: 700px;
     max-height: 100vh;
+    padding-right: 200px;
+    padding-left: 150px;
     margin-left: auto;
-    margin-right: auto;
     position: relative;
     overflow: hidden;
 }
+
 
 .swiper-slide {
     text-align: center;
@@ -318,42 +338,143 @@
     overflow: visible;
 }
 
+.swiper-pagination-vertical {
+    position: absolute !important;
+    right: -50px !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 54px !important;
+    z-index: 10;
+}
+
 .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    opacity: 0.5;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 14px !important;
+    height: 14px !important;
+    background: var(--body-color) !important;
+    border-radius: 50% !important;
+    opacity: 1 !important;
+    position: relative !important;
+    transition: all .5s !important;
 }
 
 .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: var(--accent-color);
+    opacity: 1 !important;
+    background: var(--body-bg) !important;
+    color: var(--body-color) !important;
+    transform: scale(1.1) !important;
+    font-weight: 400 !important;
+    font-size: 21px !important;
+    width: 24px !important;
+    height: 24px !important;
 }
 
-.swiper-pagination-vertical {
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+.swiper-pagination-bullet-active::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 74px !important;
+    height: 74px !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 50% !important;
+    border: 5px solid var(--accent-color) !important;
+    transition: all 0.5s ease !important;
+    z-index: -1 !important;
 }
 
 .swiper-pagination-vertical .swiper-pagination-bullet {
-    margin: 6px 0;
-    display: block;
+    margin: 0 !important;
 }
 
-/* .swiper-slide:nth-child(2n) {
-        width: 60%;
-    }
-    .swiper-slide:nth-child(3n) {
-        width: 40%;
-    } */
 
 /* -------------------- */
 /* -------------------- */
 
-@media (max-width: 1380px) {
+@media (max-width: 1500px) {}
+
+@media (max-width: 1400px) {
     .hero__arrow {
         display: none;
+    }
+
+    /* ---------------- */
+
+    .about__text-title {
+        font-size: 100px;
+        font-weight: 500;
+    }
+
+    .swiper-container-vertical {
+        padding-right: 200px;
+        padding-left: 144px;
+        margin-left: auto;
+    }
+
+    .swiper-pagination-vertical {
+        left: 50% !important;
+        top: auto !important;
+        bottom: 70px !important;
+        transform: translateX(-40%) !important;
+        flex-direction: row !important;
+        gap: 54px !important;
+        width: auto !important;
+        height: 40px !important;
+        justify-content: center !important;
+    }
+}
+
+/* ------------------- */
+
+
+
+@media (max-width: 1200px) {
+    .about__protein-img {
+        max-width: 400px;
+        max-height: 500px;
+    }
+
+    .about__protein-stats {
+        top: 218px;
+        left: -110px;
+    }
+
+
+    .about__protein-stats-white {
+        padding: 20px 28px;
+    }
+
+    .about__protein-stats-orange {
+        padding: 20px 28px;
+
+    }
+
+    .about__protein-stats-white p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    .about__protein-stats-orange p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    .about__protein-icon {
+        top: 57px;
+        left: 307px;
+        width: 145px;
+        height: auto;
+    }
+
+    .swiper-container-vertical {
+        padding-left: 110px;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 20px !important;
+        height: 20px !important;
     }
 }
 
@@ -369,23 +490,74 @@
     .hero__arrow {
         left: 38%;
     }
-}
 
-.hero__card-arrow {}
+    /* ------------------- */
 
-@media (max-width: 1100px) {
-    .header__logo {
-        max-width: 140px;
+    .about__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
-    .nav__link {
-        font-size: 18px;
+    .about__text {
+        max-width: 100%;
     }
 
-}
+    .about__text-title,
+    .about__text-subtitle,
+    .about__text-text {
+        text-align: center;
+    }
 
+    .about__text-text:nth-child(5) {
+        margin-bottom: 35px;
+    }
+
+    .about__text-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 213px;
+        max-height: 76px;
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+
+    .swiper-container-vertical {
+        padding-right: 50px;
+        padding-left: 50px;
+        height: 600px;
+    }
+
+    .swiper-pagination-vertical {
+        position: absolute !important;
+        left: 50% !important;
+        right: auto !important;
+        top: auto !important;
+        transform: translateX(-50%) !important;
+        flex-direction: row !important;
+        gap: 54px !important;
+        width: auto !important;
+        height: 40px !important;
+        justify-content: center !important;
+    }
+
+    .about__protein-img {
+        max-width: 400px;
+        max-height: 500px;
+        margin: 0 auto;
+    }
+
+    .about__protein-stats {
+        top: 218px;
+        left: -12.5%;
+        transform: translateX(-50%);
+    }
+}
 
 @media (max-width:1000px) {
+
+
+    /* ----------------------- */
     .footer__info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -490,6 +662,7 @@
         width: 27px;
         height: 27px;
     }
+
 
     /* ------------------- */
 
