@@ -5,8 +5,6 @@
 @import 'header.css';
 @import 'footer.css';
 
-.main {}
-
 .hero {
     padding-top: 76px;
     position: relative;
@@ -74,7 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .5s;
+    transition: var(--transition);
 }
 
 .hero__arrow:hover {
@@ -103,7 +101,7 @@
     width: 100%;
     min-height: clamp(250px, 23vw, 396px);
     background: #E3E3DE;
-    transition: all .5s;
+    transition: var(--transition);
     display: flex;
     flex-direction: column;
 }
@@ -227,7 +225,7 @@
     padding: 23px 61px;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all .5s;
+    transition: var(--transition);
 }
 
 .button-read-more:hover {
@@ -362,7 +360,7 @@
     border-radius: 50% !important;
     opacity: 1 !important;
     position: relative !important;
-    transition: all .5s !important;
+    transition: var(--transition) !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -471,7 +469,7 @@
     flex-direction: column;
     height: 100%;
     cursor: pointer;
-    transition: all .5s;
+    transition: var(--transition);
 }
 
 .categories__card:hover {
@@ -497,7 +495,7 @@
     flex-grow: 1;
     object-fit: contain;
     display: block;
-    transition: all .5s;
+    transition: var(--transition);
 }
 
 .categories__card-img img {
@@ -523,7 +521,7 @@
     font-weight: 700;
     letter-spacing: 1.6px;
     background: var(--bg-light);
-    transition: all .5s;
+    transition: var(--transition);
     flex-shrink: 0;
 }
 
@@ -553,7 +551,7 @@
     top: 0;
 }
 
-.program-container {
+.programs__container {
     padding: 103px 155px;
 }
 
@@ -751,7 +749,7 @@
 
 .testimonial__inner-img img {}
 
-.testimonial-overlay {
+.testimonial__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -1323,7 +1321,7 @@
 }
 
 @media (max-width:1330px) {
-    .program-container {
+    .programs__container {
         padding: 103px 20px 70px 20px;
     }
 
@@ -1541,7 +1539,7 @@
     .swiper-container-vertical {
         padding-right: 50px;
         padding-left: 50px;
-        height: 600px;
+        height: 580px;
     }
 
     .swiper-pagination-vertical {
@@ -1692,7 +1690,7 @@
 }
 
 @media (max-width:980px) {
-    .program-container {
+    .programs__container {
         padding: 70px 20px;
     }
 
@@ -1737,7 +1735,7 @@
         opacity: 0;
         visibility: hidden;
 
-        transition: all .5s;
+        transition: var(--transition);
     }
 
     .nav__list {
@@ -1752,7 +1750,7 @@
     }
 
 
-    .body--opened-menu .burger-icon {
+    .body--opened-menu .header__burger {
         transform: rotate(90deg);
     }
 
@@ -1762,9 +1760,9 @@
         visibility: visible;
     }
 
-    .burger-icon {
+    .header__burger {
         display: flex;
-        transition: all .5s;
+        transition: var(--transition);
         width: 30px;
         height: 30px;
     }
@@ -2215,12 +2213,15 @@
         height: 23px;
     }
 
-    .burger-icon {
+    .header__burger {
         width: 25px;
         height: 25px;
     }
 
     /* ----------------- */
+    .about {
+        padding-bottom: 50px;
+    }
 
     .protein-container {
         padding-bottom: 50px;
@@ -2248,6 +2249,10 @@
         left: -11.5%;
     }
 
+    .swiper-container-vertical {
+        height: 480px;
+    }
+
     .about__protein-icon {
         top: 65px;
         left: 259px;
@@ -2260,7 +2265,7 @@
     }
 
     .swiper-pagination-vertical {
-        margin-top: -90px !important;
+        margin-top: 15px !important;
     }
 
     /* ------------------ */
@@ -2337,7 +2342,7 @@
     }
 
     .swiper-pagination-vertical {
-        margin-top: -130px !important;
+        margin-top: -30px !important;
     }
 
     /* ------------------- */
@@ -2384,12 +2389,21 @@
 }
 
 @media (max-width: 500px) {
+    .header__inner {
+        padding: 50px 30px 0;
+    }
+
+    /* -------------------- */
+
     .hero__cards-arrow img {
         width: 23px;
         height: 23px;
     }
 
     /* ---------------------- */
+    .about {
+        padding-bottom: 0;
+    }
 
     .protein-container {
         padding-bottom: 50px;
@@ -2423,17 +2437,19 @@
         font-size: 15px;
     }
 
-    .swiper-slide {}
+    .swiper-container-vertical {
+        height: 330px;
+    }
 
     .swiper-pagination-vertical {
-        margin-top: -245px !important;
+        margin-top: -1px !important;
     }
 
     .swiper-pagination-bullet-active::after {
         width: 60px !important;
         height: 60px !important;
     }
-    
+
 
     /* ---------------------- */
 
@@ -2642,9 +2658,12 @@
         font-size: 15px;
     }
 
+    .swiper-container-vertical {
+        height: 280px;
+    }
+
     .swiper-pagination-vertical {
-        margin-top: -300px !important;
-        gap: 40px !important;
+        margin-top: -10px !important;
     }
 
     /* ------------------------ */

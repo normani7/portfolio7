@@ -71,6 +71,10 @@ body {
 .body--opened-menu .categories,
 .body--opened-menu .programs,
 .body--opened-menu .testimonial,
+.body--opened-menu .info,
+.body--opened-menu .timetable,
+.body--opened-menu .blog,
+.body--opened-menu .exercise-lightbox,
 .body--opened-menu .copyright {
     display: none;
     height: 0;

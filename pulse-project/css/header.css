@@ -102,7 +102,7 @@
     height: 100%;
 }
 
-.burger-icon {
+.header__burger {
     display: none;
     width: 50px;
     height: 50px;
@@ -111,7 +111,7 @@
     z-index: 11;
 }
 
-.burger-icon img {
+.header__burger img {
     width: 100%;
 }
 
