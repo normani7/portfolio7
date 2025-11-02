@@ -54,7 +54,7 @@
     background: var(--accent-color);
     border-radius: 50%;
     opacity: 0;
-    transition: all .5s;
+    transition: var(--transition)
 }
 
 .nav__link:hover::before {
@@ -76,7 +76,7 @@
 }
 
 .header__icon path{
-    transition: all .5s;
+    transition: var(--transition)
 }
 
 .header__icon:hover path{

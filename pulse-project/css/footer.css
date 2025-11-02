@@ -1,5 +1,5 @@
 .footer {
-    padding: 0 50px 50px 50px;
+    padding: 63px 50px 50px 50px;
     background: var(--body-bg);
 }
 
@@ -35,7 +35,7 @@
     background: var(--accent-color);
     border-radius: 50%;
     opacity: 0;
-    transition: all .5s;
+    transition: var(--transition)
 }
 
 .footer__path:hover::before {

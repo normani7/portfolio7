@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse Fitness Center</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="icon" href="img/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="icon" href="img/logos/logo.svg">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="header__inner">
                     <a class="header__logo" href="#">
-                        <img src="./img/logo.svg" alt="pulse logo">
+                        <img src="./img/logos/logo.svg" alt="pulse logo">
                     </a>
 
                     <nav class="nav">
@@ -25,10 +25,10 @@
                                 <a href="#" class="nav__link">HOME</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link">CATALOGS</a>
+                                <a href="#catalogs" class="nav__link">CATALOGS</a>
                             </li>
                             <li class="nav__item">
-                                <a href="#" class="nav__link">BLOG</a>
+                                <a href="#blog" class="nav__link">BLOG</a>
                             </li>
                             <li class="nav__item">
                                 <a href="#" class="nav__link">COLLECTIONS</a>
@@ -87,65 +87,67 @@
                     </div>
                 </div>
 
-                <div class="hero__bg">
-                    <img src="img/hero-bg.png" alt="Fitness training background">
-                </div>
+                <div class="big-container">
+                    <div class="hero__bg">
+                        <img src="img/decor/hero-bg.png" alt="Fitness training background">
+                    </div>
 
-                <a class="hero__arrow" href="#footer" aria-label="Scroll to cards">
-                    <svg width="40" height="40" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 29H56" stroke="black" stroke-width="2.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M29 2L56 29L29 56" stroke="black" stroke-width="2.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </a>
+                    <a class="hero__arrow" href="#footer" aria-label="Scroll to cards">
+                        <svg width="40" height="40" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 29H56" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M29 2L56 29L29 56" stroke="black" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
 
-                <div class="hero__cards">
-                    <div class="hero__cards-grid">
-                        <article class="hero__cards-item">
-                            <p class="hero__cards-title">FITNESS</p>
-                            <p class="hero__cards-text">IMPROVE YOUR STRENGTH</p>
-                            <div class="hero__cards-buttons">
-                                <a href="#" class="hero__cards-link">GET STARTED</a>
-                                <a href="#" class="hero__cards-arrow">
-                                    <img src="img/card-arrow.svg" alt="">
-                                </a>
-                            </div>
-                        </article>
+                    <div class="hero__cards">
+                        <div class="hero__cards-grid">
+                            <article class="hero__cards-item">
+                                <p class="hero__cards-title">FITNESS</p>
+                                <h2 class="hero__cards-text">IMPROVE YOUR STRENGTH</h2>
+                                <div class="hero__cards-buttons">
+                                    <a href="#" class="hero__cards-link">GET STARTED</a>
+                                    <a href="#" class="hero__cards-arrow">
+                                        <img src="img/icons/card-arrow.svg" alt="card arrow">
+                                    </a>
+                                </div>
+                            </article>
 
-                        <article class="hero__cards-item">
-                            <p class="hero__cards-title">BODYBUILDING</p>
-                            <p class="hero__cards-text">GET BEST BODY SHAPES</p>
-                            <div class="hero__cards-buttons">
-                                <a href="#" class="hero__cards-link">GET STARTED</a>
-                                <a href="#" class="hero__cards-arrow">
-                                    <img src="img/card-arrow.svg" alt="arrow card">
-                                </a>
-                            </div>
-                        </article>
+                            <article class="hero__cards-item">
+                                <p class="hero__cards-title">BODYBUILDING</p>
+                                <h2 class="hero__cards-text">GET BEST BODY SHAPES</h2>
+                                <div class="hero__cards-buttons">
+                                    <a href="#" class="hero__cards-link">GET STARTED</a>
+                                    <a href="#" class="hero__cards-arrow">
+                                        <img src="img/icons/card-arrow.svg" alt="arrow card">
+                                    </a>
+                                </div>
+                            </article>
 
-                        <article class="hero__cards-item">
-                            <p class="hero__cards-title">CROSSFIT</p>
-                            <p class="hero__cards-text">THE BEST DIETARY PLANS</p>
-                            <div class="hero__cards-buttons">
-                                <a href="#" class="hero__cards-link">GET STARTED</a>
-                                <a href="#" class="hero__cards-arrow">
-                                    <img src="img/card-arrow.svg" alt="">
-                                </a>
-                            </div>
-                        </article>
+                            <article class="hero__cards-item">
+                                <p class="hero__cards-title">CROSSFIT</p>
+                                <h2 class="hero__cards-text">THE BEST DIETARY PLANS</h2>
+                                <div class="hero__cards-buttons">
+                                    <a href="#" class="hero__cards-link">GET STARTED</a>
+                                    <a href="#" class="hero__cards-arrow">
+                                        <img src="img/icons/card-arrow.svg" alt="card arrow">
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="about">
                 <div class="about__bg">
-                    <img src="img/protein-bg.png" alt="background protein">
+                    <img src="img/decor/circles-bg.png" alt="background protein">
                 </div>
                 <div class="protein-container">
                     <div class="about__inner">
                         <div class="about__text">
-                            <p class="about__text-title">BE <span>BETTER</span></p>
+                            <h2 class="about__text-title">BE <span>BETTER</span></h2>
                             <p class="about__text-subtitle">OUR STORY</p>
                             <p class="about__text-text">
                                 Ac nec est ultrices varius morbi et non. Donec quam sed eget
@@ -157,7 +159,7 @@
                                 Ac nec est ultrices varius morbi et non. Donec quam sed eget purus. Elementum sed
                                 malesuada senectus feugiat.
                             </p>
-                            <a href="#" class="about__text-button button">READ MORE</a>
+                            <a href="#" class="about__text-button button-read-more">READ MORE</a>
                         </div>
 
                         <div class="swiper-container swiper-container-vertical">
@@ -166,7 +168,7 @@
                                     <div class="about__protein">
                                         <div class="about__protein-img">
                                             <img src="img/protein.png" alt="protein bottle">
-                                            <span class="about__protein-stats">
+                                            <div class="about__protein-stats">
                                                 <div class="about__protein-stats-white">
                                                     <p>24G</p>
                                                     <p>PROTEIN</p>
@@ -175,9 +177,9 @@
                                                     <p>5.5G</p>
                                                     <p>BCAAS</p>
                                                 </div>
-                                            </span>
+                                            </div>
                                             <div class="about__protein-icon">
-                                                <img src="img/protein-icon.png" alt="">
+                                                <img src="img/protein-icon.png" alt="protein icon">
                                             </div>
                                         </div>
                                     </div>
@@ -186,7 +188,7 @@
                                     <div class="about__protein">
                                         <div class="about__protein-img">
                                             <img src="img/protein.png" alt="protein bottle">
-                                            <span class="about__protein-stats">
+                                            <div class="about__protein-stats">
                                                 <div class="about__protein-stats-white">
                                                     <p>30G</p>
                                                     <p>PROTEIN</p>
@@ -195,9 +197,9 @@
                                                     <p>7.2G</p>
                                                     <p>BCAAS</p>
                                                 </div>
-                                            </span>
+                                            </div>
                                             <div class="about__protein-icon">
-                                                <img src="img/protein-icon.png" alt="">
+                                                <img src="img/protein-icon.png" alt="protein icon">
                                             </div>
                                         </div>
                                     </div>
@@ -206,7 +208,7 @@
                                     <div class="about__protein">
                                         <div class="about__protein-img">
                                             <img src="img/protein.png" alt="protein bottle">
-                                            <span class="about__protein-stats">
+                                            <div class="about__protein-stats">
                                                 <div class="about__protein-stats-white">
                                                     <p>32G</p>
                                                     <p>PROTEIN</p>
@@ -215,9 +217,9 @@
                                                     <p>6.3G</p>
                                                     <p>BCAAS</p>
                                                 </div>
-                                            </span>
+                                            </div>
                                             <div class="about__protein-icon">
-                                                <img src="img/protein-icon.png" alt="">
+                                                <img src="img/protein-icon.png" alt="protein icon">
                                             </div>
                                         </div>
                                     </div>
@@ -226,7 +228,7 @@
                                     <div class="about__protein">
                                         <div class="about__protein-img">
                                             <img src="img/protein.png" alt="protein bottle">
-                                            <span class="about__protein-stats">
+                                            <div class="about__protein-stats">
                                                 <div class="about__protein-stats-white">
                                                     <p>27G</p>
                                                     <p>PROTEIN</p>
@@ -235,9 +237,9 @@
                                                     <p>5.7G</p>
                                                     <p>BCAAS</p>
                                                 </div>
-                                            </span>
+                                            </div>
                                             <div class="about__protein-icon">
-                                                <img src="img/protein-icon.png" alt="">
+                                                <img src="img/protein-icon.png" alt="protein icon">
                                             </div>
                                         </div>
                                     </div>
@@ -248,105 +250,1081 @@
                     </div>
                 </div>
             </section>
-        </main>
 
-        <footer class="footer" id="footer">
-            <div class="container">
-                <div class="footer__top">
-                    <a href="#" class="footer__logo">
-                        <img src="./img/logo.svg" alt="company logo">
-                    </a>
-                    <a href="#" class="footer__path">POWER FROM WITHIN</a>
-                </div>
+            <section class="categories">
+                <div class="container-categories">
+                    <div class="categories__title">
+                        <div class="categories__title-scroll">
+                            <h2 class="categories__title-text">APPROACH</h2>
+                            <h2 class="categories__title-text">CARDIO</h2>
+                            <h2 class="categories__title-text">KICKBOX</h2>
+                            <h2 class="categories__title-text">JIU-JITSU</h2>
+                            <h2 class="categories__title-text">BOXING</h2>
+                            <h2 class="categories__title-text">APPROACH</h2>
+                            <h2 class="categories__title-text">CARDIO</h2>
+                            <h2 class="categories__title-text">KICKBOX</h2>
+                            <h2 class="categories__title-text">JIU-JITSU</h2>
+                            <h2 class="categories__title-text">BOXING</h2>
+                        </div>
+                    </div>
 
-                <div class="footer__border border"></div>
-
-                <div class="footer__info" id="footer__info">
-                    <div class="footer__contact">
-                        <p class="footer__contact-title title">CONTACT US</p>
-                        <a href="mailto:hello@pulse.com" class="footer__contact-mail">hello@pulse.com</a>
-                        <a href="tel:+9076838196" class="footer__contact-tel">+907 683 8196</a>
-                        <div class="footer__socials">
-                            <p class="footer__socials-title">FOLLOW US</p>
-                            <div class="footer__socials-list">
-                                <a href="#">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    <div class="categories__inner">
+                        <div class="categories__card">
+                            <img src="img/categories-man.png" alt="Training gear" class="categories__card-img">
+                            <div class="categories__card-buttons">
+                                <a href="#" class="categories__card-link">GEAR</a>
+                                <a href="#" class="categories__card-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 22 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M17.0703 0H2.92969C1.31439 0 0 1.31439 0 2.92969V17.0703C0 18.6856 1.31439 20 2.92969 20H8.82812V12.9297H6.48438V9.41406H8.82812V7.03125C8.82812 5.09262 10.4051 3.51562 12.3438 3.51562H15.8984V7.03125H12.3438V9.41406H15.8984L15.3125 12.9297H12.3438V20H17.0703C18.6856 20 20 18.6856 20 17.0703V2.92969C20 1.31439 18.6856 0 17.0703 0Z"
-                                            fill="white" />
+                                        <path d="M1.55635 10.279L20.1214 10.279" stroke="#141414" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.8389 0.9965L20.1214 10.279L10.8389 19.5615" stroke="#141414"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a href="#">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            </div>
+                        </div>
+                        <div class="categories__card">
+                            <img src="img/categories-girl.png" alt="Sport design" class="categories__card-img">
+                            <div class="categories__card-buttons">
+                                <a href="#" class="categories__card-link">DESIGN</a>
+                                <a href="#" class="categories__card-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 22 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M18.8998 1.10018C18.1666 0.366771 17.2832 0 16.2503 0H3.75003C2.71712 0 1.83372 0.366771 1.10018 1.10018C0.366771 1.83372 0 2.71708 0 3.75003V16.2502C0 17.283 0.366771 18.1665 1.10018 18.9C1.83372 19.6336 2.71712 20.0003 3.75003 20.0003H16.2502C17.2831 20.0003 18.1665 19.6336 18.8997 18.9C19.6332 18.1665 20 17.2831 20 16.2502V3.75003C20 2.71708 19.6332 1.83358 18.8998 1.10018ZM15.2997 7.69548C15.3084 7.77361 15.3128 7.89059 15.3128 8.04711C15.3128 8.77632 15.2063 9.50767 14.9938 10.241C14.7812 10.9747 14.4556 11.6778 14.0171 12.3505C13.579 13.0231 13.0559 13.618 12.4484 14.1344C11.8406 14.6507 11.1116 15.0632 10.2607 15.3711C9.41021 15.6795 8.49858 15.8337 7.52642 15.8337C6.0161 15.8337 4.61852 15.4254 3.33373 14.6098C3.54206 14.6357 3.7592 14.6488 3.98477 14.6488C5.24352 14.6488 6.37635 14.2582 7.38335 13.4767C6.79315 13.4683 6.26571 13.2861 5.80134 12.9298C5.33683 12.574 5.01357 12.1226 4.83123 11.5757C5.05685 11.6104 5.2261 11.6276 5.33893 11.6276C5.52988 11.6276 5.75131 11.5929 6.00296 11.5236C5.3693 11.4019 4.83552 11.0875 4.40148 10.5797C3.96735 10.0718 3.75035 9.49244 3.75035 8.84145V8.81541C4.21029 9.03227 4.64433 9.1451 5.05238 9.1539C4.26242 8.62427 3.86747 7.86482 3.86747 6.87524C3.86747 6.38907 3.99325 5.92904 4.245 5.495C4.9307 6.33708 5.76421 7.00974 6.74499 7.51319C7.72586 8.0166 8.77632 8.29886 9.89606 8.35957C9.85274 8.19465 9.83098 7.98623 9.83098 7.73457C9.83098 6.97923 10.0979 6.3348 10.6318 5.80088C11.1656 5.26701 11.8102 4.99998 12.5653 4.99998C13.3641 4.99998 14.0283 5.28653 14.5578 5.85949C15.1568 5.74665 15.7386 5.52519 16.3027 5.19545C16.0857 5.86368 15.6818 6.37156 15.0918 6.71881C15.6559 6.64055 16.1809 6.49306 16.667 6.27606C16.3024 6.8316 15.8465 7.30468 15.2997 7.69548Z"
-                                            fill="white" />
+                                        <path d="M1.55635 10.279L20.1214 10.279" stroke="#141414" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.8389 0.9965L20.1214 10.279L10.8389 19.5615" stroke="#141414"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <a href="#">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            </div>
+                        </div>
+                        <div class="categories__card">
+                            <img src="img/categories-dumbbels.png" alt="Fitness accessories"
+                                class="categories__card-img">
+
+                            <div class="categories__card-buttons">
+                                <a href="#" class="categories__card-link">ACESSORIES</a>
+                                <a href="#" class="categories__card-arrow">
+                                    <svg width="20" height="20" viewBox="0 0 22 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11.9126 10.0144C11.9126 11.02 11.0974 11.8352 10.0918 11.8352C9.08625 11.8352 8.271 11.02 8.271 10.0144C8.271 9.00886 9.08625 8.1936 10.0918 8.1936C11.0974 8.1936 11.9126 9.00886 11.9126 10.0144Z"
-                                            fill="white" />
-                                        <path
-                                            d="M13.1456 4.552H7.04051C5.71161 4.552 4.63062 5.633 4.63062 6.96189V13.0669C4.63062 14.3958 5.71161 15.4768 7.04051 15.4768H13.1456C14.4745 15.4768 15.5555 14.3958 15.5555 13.0669V6.96189C15.5555 5.633 14.4745 4.552 13.1456 4.552ZM10.093 13.0268C8.432 13.0268 7.08067 11.6755 7.08067 10.0144C7.08067 8.35338 8.432 7.00206 10.093 7.00206C11.7541 7.00206 13.1054 8.35338 13.1054 10.0144C13.1054 11.6755 11.7541 13.0268 10.093 13.0268ZM13.5472 7.16272C13.2144 7.16272 12.9447 6.89302 12.9447 6.56024C12.9447 6.22747 13.2144 5.95777 13.5472 5.95777C13.88 5.95777 14.1497 6.22747 14.1497 6.56024C14.1497 6.89302 13.88 7.16272 13.5472 7.16272Z"
-                                            fill="white" />
-                                        <path
-                                            d="M14.7266 0H5.27344C2.36572 0 0 2.36572 0 5.27344V14.7266C0 17.6343 2.36572 20 5.27344 20H14.7266C17.6343 20 20 17.6343 20 14.7266V5.27344C20 2.36572 17.6343 0 14.7266 0ZM16.4844 12.9688C16.4844 14.9072 14.9072 16.4844 12.9688 16.4844H7.03125C5.09277 16.4844 3.51562 14.9072 3.51562 12.9688V7.03125C3.51562 5.09277 5.09277 3.51562 7.03125 3.51562H12.9688C14.9072 3.51562 16.4844 5.09277 16.4844 7.03125V12.9688Z"
-                                            fill="white" />
+                                        <path d="M1.55635 10.279L20.1214 10.279" stroke="#141414" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.8389 0.9965L20.1214 10.279L10.8389 19.5615" stroke="#141414"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <div class="footer__col">
-                        <div class="footer__location">
-                            <p class="footer__location-title title">OUR LOCATION</p>
-                            <div class="footer__city">
-                                <p class="footer__city-name">Hawaii</p>
-                                <p class="footer__city-address">
-                                    828 Timbercrest Road,<br>Healy City, AK 99743
-                                </p>
+            <section class="programs">
+                <div class="container">
+                    <img src="img/decor/circles-bg.png" alt="circles background" class="program__bg">
+                    <img src="img/decor/within.svg" alt="program title background" class="program__bg-title">
+                    <div class="program-container">
+                        <div class="program__top">
+                            <h2 class="program__top-title">OUR PROGRAMS</h2>
+                            <p class="program__top-subtitle">
+                                Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                                purus. Elementum sed malesuada senectus.
+                            </p>
+                        </div>
+                        <div class="program__list">
+                            <div class="program__item">
+                                <div class="program__item-img">
+                                    <img src="img/program-img1.png" alt="boxing girl">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="program__list-subtitle">
+                                    <p>COACHING</p>
+                                    <p>STRENGTH</p>
+                                </div>
+                                <p class="program__list-day">GYM DAY</p>
+                                <div class="program__progress-line"></div>
                             </div>
-                            <div class="footer__city">
-                                <p class="footer__city-name">New York</p>
-                                <p class="footer__city-address">
-                                    828 Timbercrest Road,<br>Healy City, AK 99743
-                                </p>
+                            <div class="program__item">
+                                <div class="program__item-img">
+                                    <img src="img/program-img2.png" alt="a man lifts dumbbells">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="program__list-subtitle">
+                                    <p>COACHING</p>
+                                    <p>STRENGTH</p>
+                                </div>
+                                <p class="program__list-day">CARDIO WORKOUT</p>
+                                <div class="program__progress-line"></div>
+                            </div>
+                            <div class="program__item">
+                                <div class="program__item-img">
+                                    <img src="img/program-img3.png" alt="a girl perfoms an exercise">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="program__list-subtitle">
+                                    <p>COACHING</p>
+                                    <p>STRENGTH</p>
+                                </div>
+                                <p class="program__list-day">BODY STRENGTH</p>
+                                <div class="program__progress-line"></div>
                             </div>
                         </div>
+                    </div>
+                    <div class="program__button button-big">
+                        <a href="#">VIEW FULL TIMETABLE</a>
+                        <a href="#">
+                            <svg width="21" height="21" viewBox="0 0 22 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.55635 10.279L20.1214 10.279" stroke="#141414" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.8389 0.9965L20.1214 10.279L10.8389 19.5615" stroke="#141414"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-                        <div class="footer__schedule">
-                            <p class="footer__schedule-title title">OPENING HOURS</p>
-                            <div class="footer__schedule-item">
-                                <p class="footer__schedule-day">Monday-Friday</p>
-                                <p class="footer__schedule-mode">
-                                    Our doors are open <br>
-                                    06:00 - 22:00
-                                </p>
+            <section class="testimonial">
+                <div class="big-container">
+                    <div class="testimonial__inner">
+                        <div class="testimonial__inner-one">
+                            <img src="img/testimonal-1.png" alt="boxing girl" class="testimonial__inner-img">
+                        </div>
+
+                        <div class="testimonial__icon">
+                            <img src="img/protein-icon.png" alt="protein icon">
+                        </div>
+
+                        <div class="testimonial__inner-two">
+                            <img src="img/icons/testimonial-icon.svg" alt="quotation marks"
+                                class="testimonal__inner-icon">
+                            <img src="img/testimonial-2.png" alt="boxing girl 2" class="testimonial__inner-img">
+                            <div class="testimonial-overlay"></div>
+
+                            <div class="testimonial__inner-info">
+                                <h3 class="testimonial__inner-title">
+                                    “THIS PLACE HELP ME
+                                    ACCOMPLISHED MY <br>
+                                    BIGGEST GOAL, BE IN SHAPE”
+                                </h3>
+                                <div class="testimonial__inner-line"></div>
+                                <p class="testimonial__inner-author">Graphic Designer</p>
+                                <p class="testimonial__inner-author-name">Monica Belsley</p>
                             </div>
-                            <div class="footer__schedule-item">
-                                <p class="footer__schedule-day">Weekends</p>
-                                <p class="footer__schedule-mode">
-                                    Our doors are open <br>
-                                    10:00 - 21:00
-                                </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="catalogs" class="info">
+                <div class="big-container">
+                    <div class="info__inner">
+                        <div class="info__tabs tabs">
+                            <div class="info__tabs-buttons">
+                                <button class="info__tabs-button active" data-tab="1">PULSE</button>
+                                <button class="info__tabs-button" data-tab="2">OUR STORY</button>
+                                <button class="info__tabs-button" data-tab="3">APPROACH</button>
+                                <button class="info__tabs-button" data-tab="4">OUR PLAN</button>
                             </div>
+                            <div class="info__tabs-content">
+                                <div class="info-tab-content active" data-tab-content="1">
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">BEST GYM</h2>
+                                        <p class="info__content-text">
+                                            Ac nec est ultrices varius morbi et non. Donec quam sed eget purus.
+                                            Elementum sed malesuada senectus feugiat faucibus morbi a neque ultricies.
+                                            Nisl maecenas eget ultricies in lobortis.
+                                        </p>
+                                    </div>
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">OUR PLAN</h2>
+                                        <p class="info__content-text">
+                                            Ac nec est ultrices varius morbi et non. Donec quam sed eget purus.
+                                            Elementum sed malesuada senectus feugiat.
+                                        </p>
+                                    </div>
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">TECHNIQUE</h2>
+                                        <p class="info__content-text">
+                                            Ac nec est ultrices varius morbi et non. Donec quam sed eget purus.
+                                            Elementum sed malesuada senectus feugiat. At faucibus morbi a neque
+                                            ultricies. Nisl maecenas eget ultricies in lobortis. Nec quam sed eget
+                                            purus. Elementum sed malesuada senectus
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="info-tab-content" data-tab-content="2">
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">OUR BEGINNING</h2>
+                                        <p class="info__content-text">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta voluptas
+                                            commodi dolorum a impedit voluptatibus animi dignissimos officia accusamus
+                                            voluptates.
+                                        </p>
+                                    </div>
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">OUR MISSION</h2>
+                                        <p class="info__content-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam consequuntur
+                                            quibusdam ducimus ullam aut aliquam nulla dolor fugit minus laboriosam fuga,
+                                            est suscipit, vero, nihil quo saepe nostrum? Cum, quis.
+                                        </p>
+                                    </div>
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">OUR JOURNEY</h2>
+                                        <p class="info__content-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias
+                                            voluptatum aliquam voluptate illum beatae tempore at earum distin!pa
+                                            delectus corrupti?
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="info-tab-content" data-tab-content="3">
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">PERSONALIZED TRAINING</h2>
+                                        <p class="info__content-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum
+                                            possimus minima obcaecati deserunt odio explicabo aliquam architecto illo
+                                            aperiam.
+                                        </p>
+                                    </div>
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">SCIENTIFIC METHODS</h2>
+                                        <p class="info__content-text">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quas
+                                            blanditiis natus, quia omnis consequatur alias. Officiis aliquam distinctio
+                                            quam dolorem ipsum laboriosam, tempore qui, sunt, doloru!
+                                    </div>
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">HOLISTIC WELLNESS</h2>
+                                        <p class="info__content-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolorem,
+                                            enim consectetur natus inventore, omnis commodi temporibus sap!
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="info-tab-content" data-tab-content="4">
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">MEMBERSHIP OPTIONS</h2>
+                                        <p class="info__content-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laudantium
+                                            adipisci ullam error natus odio ex deserunt cum modi velit nesciunt incidunt
+                                            molestiae, asperiores est doloribus architecto placeat quod quia.
+                                        </p>
+                                    </div>
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">PROGRESS TRACKING</h2>
+                                        <p class="info__content-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, molestiae!
+                                            Cum sunt omnis temporibus deleniti dolores eveniet exercitationem libero et.
+                                        </p>
+                                    </div>
+                                    <div class="info__content">
+                                        <h2 class="info__content-title">FUTURE GOALS</h2>
+                                        <p class="info__content-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, natus.
+                                            Vitae natus aut dolor. Quidem esse repudiandae, reiciendis sit, blanditiis
+                                            obcaecati aspernatur ullam nulla optio!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__bottom">
+                        <div class="info__bottom-col">
+                            <div class="info__bottom-sum">6</div>
+                            <div class="info__bottom-text">YEARS OF EXPERIENCES</div>
+                        </div>
+                        <div class="info__bottom-col">
+                            <div class="info__bottom-sum">20</div>
+                            <div class="info__bottom-text">SELECTED TRAINER</div>
+                        </div>
+                        <div class="info__bottom-col">
+                            <div class="info__bottom-sum">120K</div>
+                            <div class="info__bottom-text">CALORIES BURNED</div>
+                        </div>
+                        <div class="info__bottom-col">
+                            <div class="info__bottom-sum">432</div>
+                            <div class="info__bottom-text">HAPPY MEMBERS</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="timetable">
+                <div class="big-container">
+                    <img src="img/decor/timetable-bg.svg" alt="" class="timetable__bg">
+                    <div class="timetable__wrapper">
+                        <h2>CLASSES TIMETABLE</h2>
+                        <div class="filter-tabs">
+                            <button class="tab active" data-tab="1">All Training</button>
+                            <button class="tab" data-tab="2">Bodybuilding</button>
+                            <button class="tab" data-tab="3">Cardio</button>
+                            <button class="tab" data-tab="4">Gym</button>
+                            <button class="tab" data-tab="5">Powerlifting</button>
+                        </div>
+
+                        <div class="table-scroll-container">
+                            <table class="schedule-table">
+                                <thead class="schedule-table__top">
+                                    <tr>
+                                        <th></th>
+                                        <th>MONDAY</th>
+                                        <th>TUESDAY</th>
+                                        <th>WEDNESDAY</th>
+                                        <th>THURSDAY</th>
+                                        <th>FRIDAY</th>
+                                        <th>SATURDAY</th>
+                                        <th>SUNDAY</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-tab-content="1" class="active">
+                                    <tr>
+                                        <td class="time-cell">07:00 - 08:00</td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">FITNESS CLASS</div>
+                                                <div class="instructor-name">Mark Thompson</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BOXING</div>
+                                                <div class="instructor-name">Sarah Anderson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">OPEN GYM</div>
+                                                <div class="instructor-name">Jessica Roberts</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BODYBUILDING</div>
+                                                <div class="instructor-name">Michael Johnson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">OPEN GYM</div>
+                                                <div class="instructor-name">Jessica Roberts</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell">08:00 - 09:00</td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BOXING</div>
+                                                <div class="instructor-name">Sarah Anderson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BODYBUILDING</div>
+                                                <div class="instructor-name">Michael Johnson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">FITNESS CLASS</div>
+                                                <div class="instructor-name">Mark Thompson</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BOXING</div>
+                                                <div class="instructor-name">Sarah Anderson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell">09:00 - 10:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BOXING</div>
+                                                <div class="instructor-name">Sarah Anderson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BOXING</div>
+                                                <div class="instructor-name">Sarah Anderson</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell">10:00 - 11:00</td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">OPEN GYM</div>
+                                                <div class="instructor-name">Jessica Roberts</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BODYBUILDING</div>
+                                                <div class="instructor-name">Michael Johnson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">FITNESS CLASS</div>
+                                                <div class="instructor-name">Mark Thompson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="timetable__bottom">
+                                        <td class="time-cell">11:00 - 12:00</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BODYBUILDING</div>
+                                                <div class="instructor-name">Michael Johnson</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BOXING</div>
+                                                <div class="instructor-name">Sarah Anderson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">OPEN GYM</div>
+                                                <div class="instructor-name">Jessica Roberts</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">FITNESS CLASS</div>
+                                                <div class="instructor-name">Mark Thompson</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody data-tab-content="2">
+                                    <tr>
+                                        <td class="time-cell">07:00 - 08:00</td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">OPEN GYM</div>
+                                                <div class="instructor-name">Jessica Roberts</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BODYBUILDING</div>
+                                                <div class="instructor-name">Michael Johnson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">OPEN GYM</div>
+                                                <div class="instructor-name">Jessica Roberts</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell">08:00 - 09:00</td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BODYBUILDING</div>
+                                                <div class="instructor-name">Michael Johnson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BOXING</div>
+                                                <div class="instructor-name">Sarah Anderson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell">09:00 - 10:00</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time-cell">10:00 - 11:00</td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">OPEN GYM</div>
+                                                <div class="instructor-name">Jessica Roberts</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BODYBUILDING</div>
+                                                <div class="instructor-name">Michael Johnson</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="timetable__bottom">
+                                        <td class="time-cell">11:00 - 12:00</td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">BODYBUILDING</div>
+                                                <div class="instructor-name">Michael Johnson</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">OPEN GYM</div>
+                                                <div class="instructor-name">Jessica Roberts</div>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody data-tab-content="3">
+                                    <tr>
+                                        <td class="time-cell">07:00 - 08:00</td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">FITNESS CLASS</div>
+                                                <div class="instructor-name">Mark Thompson</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="class-card">
+                                                <div class="class-name">OPEN GYM</div>
+                                                <div class="instructor-name">Jessica Roberts</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                        </div>
+                        </td>
+                        <td></td>
+                        <td>
+                            <div class="class-card">
+                                <div class="class-name">OPEN GYM</div>
+                                <div class="instructor-name">Jessica Roberts</div>
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">08:00 - 09:00</td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">BOXING</div>
+                                    <div class="instructor-name">Sarah Anderson</div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">FITNESS CLASS</div>
+                                    <div class="instructor-name">Mark Thompson</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">BOXING</div>
+                                    <div class="instructor-name">Sarah Anderson</div>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">09:00 - 10:00</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">10:00 - 11:00</td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">OPEN GYM</div>
+                                    <div class="instructor-name">Jessica Roberts</div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">FITNESS CLASS</div>
+                                    <div class="instructor-name">Mark Thompson</div>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="timetable__bottom">
+                            <td class="time-cell">11:00 - 12:00</td>
+                            <td></td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">OPEN GYM</div>
+                                    <div class="instructor-name">Jessica Roberts</div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">FITNESS CLASS</div>
+                                    <div class="instructor-name">Mark Thompson</div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tbody data-tab-content="4">
+                            <tr>
+                                <td class="time-cell">07:00 - 08:00</td>
+                                <td>
+                                    <div class="class-card">
+                                        <div class="class-name">FITNESS CLASS</div>
+                                        <div class="instructor-name">Mark Thompson</div>
+                                    </div>
+                                </td>
+                                <td>
+                    </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div class="class-card">
+                            <div class="class-name">OPEN GYM</div>
+                            <div class="instructor-name">Jessica Roberts</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="class-card">
+                            <div class="class-name">BODYBUILDING</div>
+                            <div class="instructor-name">Michael Johnson</div>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div class="class-card">
+                            <div class="class-name">OPEN GYM</div>
+                            <div class="instructor-name">Jessica Roberts</div>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">08:00 - 09:00</td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td>
+                            <div class="class-card">
+                                <div class="class-name">BODYBUILDING</div>
+                                <div class="instructor-name">Michael Johnson</div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">09:00 - 10:00</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">10:00 - 11:00</td>
+                        <td>
+                            <div class="class-card">
+                                <div class="class-name">OPEN GYM</div>
+                                <div class="instructor-name">Jessica Roberts</div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="class-card">
+                                <div class="class-name">BODYBUILDING</div>
+                                <div class="instructor-name">Michael Johnson</div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="timetable__bottom">
+                        <td class="time-cell">11:00 - 12:00</td>
+                        <td></td>
+                        <td>
+                            <div class="class-card">
+                                <div class="class-name">BODYBUILDING</div>
+                                <div class="instructor-name">Michael Johnson</div>
+                            </div>
+                        </td>
+                        <td>
+                        </td>
+                        <td></td>
+                        <td>
+                            <div class="class-card">
+                                <div class="class-name">OPEN GYM</div>
+                                <div class="instructor-name">Jessica Roberts</div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tbody data-tab-content="5">
+                        <tr>
+                            <td class="time-cell">07:00 - 08:00</td>
+                            <td>
+                            </td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">BOXING</div>
+                                    <div class="instructor-name">Sarah Anderson</div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">OPEN GYM</div>
+                                    <div class="instructor-name">Jessica Roberts</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">08:00 - 09:00</td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">BOXING</div>
+                                    <div class="instructor-name">Sarah Anderson</div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">FITNESS CLASS</div>
+                                    <div class="instructor-name">Mark Thompson</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">BOXING</div>
+                                    <div class="instructor-name">Sarah Anderson</div>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">09:00 - 10:00</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">BOXING</div>
+                                    <div class="instructor-name">Sarah Anderson</div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">10:00 - 11:00</td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">FITNESS CLASS</div>
+                                    <div class="instructor-name">Mark Thompson</div>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="timetable__bottom">
+                            <td class="time-cell">11:00 - 12:00</td>
+                            <td></td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div class="class-card">
+                                    <div class="class-name">FITNESS CLASS</div>
+                                    <div class="instructor-name">Mark Thompson</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+    </div>
+    <div class="tab__button button-big">
+        <a href="#">VIEW FULL TIMETABLE</a>
+        <a href="#">
+            <svg width="21" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.55635 10.279L20.1214 10.279" stroke="#141414" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M10.8389 0.9965L20.1214 10.279L10.8389 19.5615" stroke="#141414" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+    </div>
+    </div>
+    </section>
+
+    <section class="exercise-lightbox">
+        <div class="big-container">
+            <div class="exercise-lightbox__inner">
+                <div class="exercise-lightbox__video">
+                    <img class="exercise-lightbox__video-img" src="img/video.png" alt="">
+                    <div class="exercise-lightbox__control">
+                        <a class="exercise-lightbox__control-button" data-fslightbox href="media/video.mp4">
+                            <img src="img/icons/control-icon.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="big-container">
+            <div class="blog__inner">
+                <div class="blog__info">
+                    <h2 class="blog__title">LASTEST BLOG</h2>
+                    <a href="#" class="blog__button button-read-more">READ MORE</a>
+                </div>
+                <ul class="blog__list">
+                    <li class="blog__card">
+                        <img src="img/blog-img1.png" alt="" class="blog__img">
+                        <div class="blog__card-info">
+                            <p class="content__blog-data">21 FEBRUARY 2023</p>
+                            <h3 class="content__blog-title">
+                                Achieve Your Fitness Goals: Insights from Our Center
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="blog__card">
+                        <img src="img/blog-img2.png" alt="" class="blog__img">
+                        <div class="blog__card-info">
+                            <p class="content__blog-data">21 FEBRUARY 2023</p>
+                            <h3 class="content__blog-title">
+                                Achieve Your Fitness Goals: Insights from Our Center
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="blog__card">
+                        <img src="img/blog-img3.png" alt="" class="blog__img">
+                        <div class="blog__card-info">
+                            <p class="content__blog-data">21 FEBRUARY 2023</p>
+                            <h3 class="content__blog-title">
+                                Achieve Your Fitness Goals: Insights from Our Center
+                            </h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a href="#" class="footer__logo">
+                    <img src="./img/logos/logo.svg" alt="company logo">
+                </a>
+                <a href="#" class="footer__path">POWER FROM WITHIN</a>
+            </div>
+
+            <div class="footer__border border"></div>
+
+            <div class="footer__info" id="footer__info">
+                <div class="footer__contact">
+                    <p class="footer__contact-title title">CONTACT US</p>
+                    <a href="mailto:hello@pulse.com" class="footer__contact-mail">hello@pulse.com</a>
+                    <a href="tel:+9076838196" class="footer__contact-tel">+907 683 8196</a>
+                    <div class="footer__socials">
+                        <p class="footer__socials-title">FOLLOW US</p>
+                        <div class="footer__socials-list">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.0703 0H2.92969C1.31439 0 0 1.31439 0 2.92969V17.0703C0 18.6856 1.31439 20 2.92969 20H8.82812V12.9297H6.48438V9.41406H8.82812V7.03125C8.82812 5.09262 10.4051 3.51562 12.3438 3.51562H15.8984V7.03125H12.3438V9.41406H15.8984L15.3125 12.9297H12.3438V20H17.0703C18.6856 20 20 18.6856 20 17.0703V2.92969C20 1.31439 18.6856 0 17.0703 0Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.8998 1.10018C18.1666 0.366771 17.2832 0 16.2503 0H3.75003C2.71712 0 1.83372 0.366771 1.10018 1.10018C0.366771 1.83372 0 2.71708 0 3.75003V16.2502C0 17.283 0.366771 18.1665 1.10018 18.9C1.83372 19.6336 2.71712 20.0003 3.75003 20.0003H16.2502C17.2831 20.0003 18.1665 19.6336 18.8997 18.9C19.6332 18.1665 20 17.2831 20 16.2502V3.75003C20 2.71708 19.6332 1.83358 18.8998 1.10018ZM15.2997 7.69548C15.3084 7.77361 15.3128 7.89059 15.3128 8.04711C15.3128 8.77632 15.2063 9.50767 14.9938 10.241C14.7812 10.9747 14.4556 11.6778 14.0171 12.3505C13.579 13.0231 13.0559 13.618 12.4484 14.1344C11.8406 14.6507 11.1116 15.0632 10.2607 15.3711C9.41021 15.6795 8.49858 15.8337 7.52642 15.8337C6.0161 15.8337 4.61852 15.4254 3.33373 14.6098C3.54206 14.6357 3.7592 14.6488 3.98477 14.6488C5.24352 14.6488 6.37635 14.2582 7.38335 13.4767C6.79315 13.4683 6.26571 13.2861 5.80134 12.9298C5.33683 12.574 5.01357 12.1226 4.83123 11.5757C5.05685 11.6104 5.2261 11.6276 5.33893 11.6276C5.52988 11.6276 5.75131 11.5929 6.00296 11.5236C5.3693 11.4019 4.83552 11.0875 4.40148 10.5797C3.96735 10.0718 3.75035 9.49244 3.75035 8.84145V8.81541C4.21029 9.03227 4.64433 9.1451 5.05238 9.1539C4.26242 8.62427 3.86747 7.86482 3.86747 6.87524C3.86747 6.38907 3.99325 5.92904 4.245 5.495C4.9307 6.33708 5.76421 7.00974 6.74499 7.51319C7.72586 8.0166 8.77632 8.29886 9.89606 8.35957C9.85274 8.19465 9.83098 7.98623 9.83098 7.73457C9.83098 6.97923 10.0979 6.3348 10.6318 5.80088C11.1656 5.26701 11.8102 4.99998 12.5653 4.99998C13.3641 4.99998 14.0283 5.28653 14.5578 5.85949C15.1568 5.74665 15.7386 5.52519 16.3027 5.19545C16.0857 5.86368 15.6818 6.37156 15.0918 6.71881C15.6559 6.64055 16.1809 6.49306 16.667 6.27606C16.3024 6.8316 15.8465 7.30468 15.2997 7.69548Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9126 10.0144C11.9126 11.02 11.0974 11.8352 10.0918 11.8352C9.08625 11.8352 8.271 11.02 8.271 10.0144C8.271 9.00886 9.08625 8.1936 10.0918 8.1936C11.0974 8.1936 11.9126 9.00886 11.9126 10.0144Z"
+                                        fill="white" />
+                                    <path
+                                        d="M13.1456 4.552H7.04051C5.71161 4.552 4.63062 5.633 4.63062 6.96189V13.0669C4.63062 14.3958 5.71161 15.4768 7.04051 15.4768H13.1456C14.4745 15.4768 15.5555 14.3958 15.5555 13.0669V6.96189C15.5555 5.633 14.4745 4.552 13.1456 4.552ZM10.093 13.0268C8.432 13.0268 7.08067 11.6755 7.08067 10.0144C7.08067 8.35338 8.432 7.00206 10.093 7.00206C11.7541 7.00206 13.1054 8.35338 13.1054 10.0144C13.1054 11.6755 11.7541 13.0268 10.093 13.0268ZM13.5472 7.16272C13.2144 7.16272 12.9447 6.89302 12.9447 6.56024C12.9447 6.22747 13.2144 5.95777 13.5472 5.95777C13.88 5.95777 14.1497 6.22747 14.1497 6.56024C14.1497 6.89302 13.88 7.16272 13.5472 7.16272Z"
+                                        fill="white" />
+                                    <path
+                                        d="M14.7266 0H5.27344C2.36572 0 0 2.36572 0 5.27344V14.7266C0 17.6343 2.36572 20 5.27344 20H14.7266C17.6343 20 20 17.6343 20 14.7266V5.27344C20 2.36572 17.6343 0 14.7266 0ZM16.4844 12.9688C16.4844 14.9072 14.9072 16.4844 12.9688 16.4844H7.03125C5.09277 16.4844 3.51562 14.9072 3.51562 12.9688V7.03125C3.51562 5.09277 5.09277 3.51562 7.03125 3.51562H12.9688C14.9072 3.51562 16.4844 5.09277 16.4844 7.03125V12.9688Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__location">
+                        <p class="footer__location-title title">OUR LOCATION</p>
+                        <div class="footer__city">
+                            <p class="footer__city-name">Hawaii</p>
+                            <p class="footer__city-address">
+                                828 Timbercrest Road,<br>Healy City, AK 99743
+                            </p>
+                        </div>
+                        <div class="footer__city">
+                            <p class="footer__city-name">New York</p>
+                            <p class="footer__city-address">
+                                828 Timbercrest Road,<br>Healy City, AK 99743
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer__schedule">
+                        <p class="footer__schedule-title title">OPENING HOURS</p>
+                        <div class="footer__schedule-item">
+                            <p class="footer__schedule-day">Monday-Friday</p>
+                            <p class="footer__schedule-mode">
+                                Our doors are open <br>
+                                06:00 - 22:00
+                            </p>
+                        </div>
+                        <div class="footer__schedule-item">
+                            <p class="footer__schedule-day">Weekends</p>
+                            <p class="footer__schedule-mode">
+                                Our doors are open <br>
+                                10:00 - 21:00
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-
-        <div class="copyright">
-            <p>Copyright Dotcreativemarket, All Rights Reserved</p>
         </div>
+    </footer>
+
+    <div class="copyright">
+        <p>Copyright Dotcreativemarket, All Rights Reserved</p>
+    </div>
     </div>
 
+    <script src="js/fslightbox.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
